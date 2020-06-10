@@ -1,11 +1,12 @@
 package animal
+import "fmt"
 
 type Cat struct {
 
-	name string
-	color string
-	height float
-	weight float
+	Name string
+	Color string
+	Height float64
+	Weight float64
 
 }
 
@@ -15,7 +16,7 @@ func (c Cat) Eat(name string) string {
 	return name
 }
 
-func (c Cat) Sleep(sleepTime int) string {
+func (c Cat) Sleep(sleepTime int) int {
 	fmt.Println("cat sleeping time",sleepTime)
 	return sleepTime
 }

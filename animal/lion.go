@@ -1,26 +1,27 @@
 package animal
+import "fmt"
 
 type Lion struct {
 
-	name string
-	color string
-	height float
-	weight float
+	Name string
+	Color string
+	Height float64
+	Weight float64
 
 }
 
 func (l Lion) Eat(name string) string {
 		
-	fmt.Println("eating food", name)
+	fmt.Println("lion eating", name)
 	return name
 }
 
-func (l Lion) Sleep(sleepTime int) string {
+func (l Lion) Sleep(sleepTime int) int {
 	fmt.Println("lion sleeping time",sleepTime)
 	return sleepTime
 }
 
-func (l Lion) Sound(Sound string) string {
+func (l Lion) Sound(sound string) string {
 	fmt.Println("lion sound", sound)
 	return sound
 }
